@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Курица Звук — скачать приложение с курицей</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="favicon.ico" />
+  <meta name="description" content="Скачать приложение Курица Звук — нажми на курицу и услышь звук. Бесплатный APK для Android. Простое мем-приложение." />
+  <meta name="keywords" content="курица звук, скачать курица звук, курица звук apk, курица приложение, chicken sound app, скачать курица звук андроид, курица звук скачать апк, курица звук приложение, chicken sound apk, курица звук android, мем приложение курица, курица звук бесплатно, курица звук скачать бесплатно, курица звук андроид скачать, chicken sound download, funny chicken app, курица мем приложение, звук курицы скачать" />
+  <meta name="author" content="Chicken Sound App" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Курица Звук — скачать приложение" />
+  <meta property="og:description" content="Нажми на курицу — услышишь звук. Минималистичное мем-приложение." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="chicken-black.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Курица Звук" />
+  <meta name="twitter:description" content="Самое бесполезное и смешное приложение с курицей." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* LIGHT THEME (default) */
+      --bg: #ffffff;
+      --card: #f6f6f6;
+      --text: #0b0b0b;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #000000;
+    }
+
+    /* DARK THEME */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0b;
+        --card: #111111;
+        --text: #f5f5f5;
+        --muted: #9ca3af;
+        --line: #1f1f1f;
+        --accent: #ffffff;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      padding: 60px 20px 80px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    .badge {
+      display: inline-block;
+      border: 1px solid var(--line);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 22px;
+      letter-spacing: .4px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 50px;
+      max-width: 520px;
+      line-height: 1.5;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 50px 30px 40px;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 340px;
+      max-width: 85%;
+      filter: grayscale(100%) contrast(110%);
+      margin-bottom: 16px;
+      transition: transform .25s ease, filter .25s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.04);
+      filter: grayscale(0%);
+    }
+
+    .hint {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* CTA */
+    .cta-wrap {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 600;
+      font-size: 16px;
+      padding: 16px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform .2s ease, box-shadow .2s ease;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.08);
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 40px rgba(255,255,255,0.15);
+    }
+
+    .meta {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .apple-note {
+      display: block;
+      margin-top: 6px;
+      opacity: .8;
+    }
+
+    /* FEATURES */
+    .features {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 16px 18px;
+      background: transparent;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+  
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      body { padding: 40px 16px 60px; }
+      h1 { font-size: 34px; }
+      .subtitle { font-size: 16px; margin-bottom: 32px; }
+      .hero { padding: 36px 20px 28px; border-radius: 20px; }
+      .hero img { width: 240px; }
+      .download-btn { width: 100%; text-align: center; padding: 16px; }
+      .features { margin-top: 50px; }
+    }
+
+    @media (max-width: 420px) {
+      h1 { font-size: 28px; }
+      .hero img { width: 200px; }
+      .feature { font-size: 13px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"><h1>Курица Звук</h1>
+    <div class="subtitle">
+      Одно действие. Один звук. Абсолютно бессмысленно — и именно поэтому прекрасно.
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="hero">
+      <!-- Имя файла изменено: chicken.png -->
+      <img src="chicken.png" alt="Chicken" />
+      <div class="hint">Нажмите на курицу в приложении — услышите звук</div>
+    </div>
+
+    <div class="cta-wrap">
+      <a class="download-btn" href="https://mega.nz/folder/imIVyDjD#IVU5nLNZ0GxWwJgDpSqA8A" target="_blank" rel="noopener">
+        Скачать APK
+      </a>
+      <div class="meta">Версия 1.0 · Работает офлайн · Без рекламы<br><span class="apple-note">К сожалению, приложение пока недоступно на устройствах Apple</span></div>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <strong>Минимализм</strong>
+        Никаких меню. Никаких настроек. Только курица.
+      </div>
+      <div class="feature">
+        <strong>Мгновенный звук</strong>
+        Нажал — услышал. Всё работает офлайн.
+      </div>
+      <div class="feature">
+        <strong>Идея</strong>
+        Маленькое приложение как арт‑объект.
+      </div>
+      <div class="feature">
+        <strong>Лёгкий вес</strong>
+        Быстро скачивается и запускается.
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
